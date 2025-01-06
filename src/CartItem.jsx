@@ -32,8 +32,8 @@ const CartItem = ({ onContinueShopping }) => {
     return totalCost;
   };
   const handleContinueShopping = (e) => {
-    if (typeof handleContinueShopping === "function") {
-      handleContinueShopping();
+    if (onContinueShopping) {
+      onContinueShopping();
     }
   };
 
